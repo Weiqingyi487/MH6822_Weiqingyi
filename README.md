@@ -8,6 +8,8 @@ Name: Wei Qingyi
 
 Matriculation ID: G2505372F
 
+Email：QINGYI001@e.ntu.edu.sg
+
 ## Project Overview
 
 This project proposes a jurisdiction-aware governance and compliance tool for AI-driven lending systems operating across the United States and the European Union.
