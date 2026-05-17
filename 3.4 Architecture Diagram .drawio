@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="Vn4xvNVx6vgIzAw2t7I5">
+    <mxGraphModel dx="640" dy="839" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-6" edge="1" parent="1" source="4QJj45xi3_5Nx6Xz1URL-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="4QJj45xi3_5Nx6Xz1URL-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Loan Application" vertex="1">
+          <mxGeometry height="30" width="60" x="300" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-11" edge="1" parent="1" source="4QJj45xi3_5Nx6Xz1URL-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="4QJj45xi3_5Nx6Xz1URL-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="200" x="230" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="AI Credit Scoring Model" vertex="1">
+          <mxGeometry height="30" width="160" x="250" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Text" vertex="1">
+          <mxGeometry height="30" width="60" x="305" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-14" edge="1" parent="1" source="4QJj45xi3_5Nx6Xz1URL-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="4QJj45xi3_5Nx6Xz1URL-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="230" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Jurisdiction Detection Layer" vertex="1">
+          <mxGeometry height="30" width="160" x="250" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="230" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-17" edge="1" parent="1" source="4QJj45xi3_5Nx6Xz1URL-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="4QJj45xi3_5Nx6Xz1URL-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Governance Rules Engine" vertex="1">
+          <mxGeometry height="30" width="150" x="260" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-22" edge="1" parent="1" source="4QJj45xi3_5Nx6Xz1URL-15" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="4QJj45xi3_5Nx6Xz1URL-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="230" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Bias &amp;amp; Explainability Check" vertex="1">
+          <mxGeometry height="30" width="150" x="260" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-27" edge="1" parent="1" source="4QJj45xi3_5Nx6Xz1URL-18" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="4QJj45xi3_5Nx6Xz1URL-25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="200" x="240" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Human Review Trigger" vertex="1">
+          <mxGeometry height="30" width="110" x="280" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Text" vertex="1">
+          <mxGeometry height="30" width="60" x="305" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="75" width="200" x="240" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="4QJj45xi3_5Nx6Xz1URL-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Compliance Output Dashboard" vertex="1">
+          <mxGeometry height="40" width="130" x="275" y="662.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
