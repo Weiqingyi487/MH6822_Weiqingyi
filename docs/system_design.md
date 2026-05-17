@@ -95,3 +95,17 @@ Possible governance outputs include:
 
 - REGULATORY_CONFIGURATION_WARNING  
   Jurisdiction rules or governance parameters may be outdated or inconsistently applied.
+
+  # 3.8 Limitations and Future Improvements
+
+The current prototype is designed as a governance architecture demonstration rather than a production-ready AI lending platform.
+
+Several technical and operational components are simplified within the current project scope. First, the system does not implement live financial data integration or real-time machine learning deployment. The lightweight Python prototype is intended only to demonstrate jurisdiction-aware governance logic.
+
+Second, the explainability and fairness assessment mechanisms are conceptual rather than fully model-driven. Advanced explainable AI methods such as SHAP or LIME are not implemented in the current prototype.
+
+Third, the governance workflow currently focuses only on regulatory divergence between the United States and the European Union. Additional jurisdictions such as the United Kingdom, Singapore, or Canada may be incorporated in future development.
+
+Finally, the current system focuses primarily on governance orchestration and compliance logic rather than predictive model optimisation or commercial lending performance.
+
+Despite these limitations, the project demonstrates how jurisdiction-aware governance architecture can improve transparency, accountability, and cross-border AI lending compliance management.
