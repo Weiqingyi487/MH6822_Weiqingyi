@@ -45,3 +45,53 @@ The governance workflow consists of several key components:
 
 6. Compliance Output Layer  
    Generates governance outcomes such as COMPLIANT, HIGH_RISK, or HUMAN_REVIEW_REQUIRED.
+
+
+![System Architecture](../3.4%20Architecture_diagram.png)
+
+# 3.5 Human Judgment and Automation Boundaries
+
+The proposed system does not fully automate final lending governance decisions. While the AI model can evaluate credit risk, detect fairness concerns, and apply jurisdiction-specific governance rules, certain high-risk decisions still require human oversight.
+
+In the European Union, high-risk AI systems are subject to stricter governance obligations under the EU AI Act. Therefore, lending decisions involving insufficient explainability, potential demographic bias, or unusually high-risk classifications are escalated for manual review. Human reviewers are responsible for assessing whether the AI-generated decision is reasonable, explainable, and compliant with regulatory expectations.
+
+In the United States, the system primarily supports compliance documentation and fair lending monitoring. However, human intervention may still be required when the system detects potential discrimination risks or incomplete explanation records.
+
+This governance boundary is intended to reduce overreliance on automated decision-making while improving accountability and regulatory transparency across jurisdictions.
+
+# 3.6 Failure Modes and Governance Risks
+
+Several governance and operational risks may affect the proposed jurisdiction-aware AI lending governance system.
+
+First, regulatory rules may change over time. The governance engine could apply outdated jurisdiction logic if regulatory updates are not incorporated promptly. This may lead to incorrect compliance assessments or insufficient governance controls.
+
+Second, AI model drift may reduce the reliability of credit scoring outcomes. Changes in applicant behaviour, economic conditions, or data distributions could gradually weaken model accuracy and fairness performance.
+
+Third, explainability mechanisms may not always provide sufficiently transparent decision explanations for complex AI models. This could create governance challenges under stricter EU regulatory requirements for high-risk AI systems.
+
+Fourth, jurisdiction detection errors may apply incorrect governance rules to cross-border lending cases. This may result in inconsistent compliance treatment between the United States and the European Union.
+
+Finally, excessive reliance on automated governance workflows may reduce meaningful human oversight. Human reviewers may gradually over-trust AI-generated compliance outputs without critically evaluating the underlying decision logic.
+
+These risks demonstrate that jurisdiction-aware AI governance systems require continuous monitoring, regulatory updating, and human supervision rather than fully autonomous operation.
+
+# 3.7 Example Governance Outputs
+
+The proposed system generates different governance outcomes depending on the jurisdiction and risk profile of the lending decision.
+
+Possible governance outputs include:
+
+- COMPLIANT  
+  The lending decision satisfies applicable jurisdiction-specific governance requirements.
+
+- HUMAN_REVIEW_REQUIRED  
+  The system detects high-risk conditions such as insufficient explainability, demographic bias concerns, or incomplete compliance documentation.
+
+- HIGH_RISK_AI_WARNING  
+  The lending model may trigger stricter governance obligations under the EU AI Act due to limited transparency or elevated fairness risks.
+
+- FAIR_LENDING_ALERT  
+  Potential discrimination or fairness concerns are identified under US fair lending requirements.
+
+- REGULATORY_CONFIGURATION_WARNING  
+  Jurisdiction rules or governance parameters may be outdated or inconsistently applied.
