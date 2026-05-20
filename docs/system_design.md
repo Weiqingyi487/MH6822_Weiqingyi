@@ -25,7 +25,9 @@ The key goals of the system include：
 
 # 3.4 System Architecture
 
-The proposed system applies jurisdiction-aware governance logic to AI-driven lending decisions across the United States and the European Union.
+The governance rules engine stores specific compliance rules for the United States and the European Union respectively. When new regulatory guidance or legal requirements are issued, the system will update regulatory parameters synchronously. Meanwhile, previous rule versions would be retained to support subsequent audit and governance traceability over time.
+
+The system applies jurisdiction-aware governance logic to AI-driven lending decisions across the United States and the European Union.
 
 The governance workflow consists of several key components:
 
@@ -101,7 +103,7 @@ Possible governance outputs include:
 
 The current prototype is designed as a governance architecture demonstration rather than a production-ready AI lending platform.
 
-Several technical and operational components are simplified within the current project scope. First, the system does not implement live financial data integration or real-time machine learning deployment. The lightweight Python prototype is intended only to demonstrate jurisdiction-aware governance logic.
+Several technical and operational components are simplified within the current project scope. Firstly, the system does not implement live financial data integration or real-time machine learning deployment. The lightweight Python prototype is intended only to demonstrate jurisdiction-aware governance logic.
 
 Second, the explainability and fairness assessment mechanisms are conceptual rather than fully model-driven. Advanced explainable AI methods such as SHAP or LIME are not implemented in the current prototype.
 
