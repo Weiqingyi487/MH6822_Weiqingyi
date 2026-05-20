@@ -62,28 +62,28 @@ This governance boundary which combined human reviews and automatic governance a
 
 # 3.6 Failure Modes and Governance Risks
 
-Several governance and operational risks may affect the proposed jurisdiction-aware AI lending governance system.
+There may be several governance and operational risks when actually operating the "jurisdiction-aware" AI lending governance system.
 
-First, regulatory rules may change over time. The governance engine could apply outdated jurisdiction logic if regulatory updates are not incorporated promptly. This may lead to incorrect compliance assessments or insufficient governance controls.
+First, regulatory rules will keep changing. If the system fails to update in time according to new regulatory requirements, the governance engine would apply outdated jurisdiction logic and cause incorrect compliance assessments or insufficient governance controls.
 
-Second, AI model drift may reduce the reliability of credit scoring outcomes. Changes in applicant behaviour, economic conditions, or data distributions could gradually weaken model accuracy and fairness performance.
+Second, AI model drift may redice the reliability of credit scoring outcomes. The model accuracy and fairness performance would be weaken when applicant behaviour, economic conditions, or data distributions change.
 
-Third, explainability mechanisms may not always provide sufficiently transparent decision explanations for complex AI models. This could create governance challenges under stricter EU regulatory requirements for high-risk AI systems.
+Third, explainability mechanisms may not always provide sufficiently transparent of explanations of decision-making for complex AI models. This could create governance challenges under stricter EU regulatory requirements for high-risk AI systems.
 
-Fourth, jurisdiction detection errors may apply incorrect governance rules to cross-border lending cases. This may result in inconsistent compliance treatment between the United States and the European Union.
+The system can also detect possible mistakes made by jurisdictions. For example, in cross-borde lending cases, if the system apply incorrect governance rules , it may result in inconsistent compliance treatment between the United States and the European Union.
 
-Finally, excessive reliance on automated governance workflows may reduce meaningful human oversight. Human reviewers may gradually over-trust AI-generated compliance outputs without critically evaluating the underlying decision logic.
+Finally, if institutions over rely on automated governance workflows, they may reduce meaningful human oversight. Human reviewers may gradually over-trust compliance outputs given by AI rather than further evaluate the underlying decision logic.
 
-These risks demonstrate that jurisdiction-aware AI governance systems require continuous monitoring, regulatory updating, and human supervision rather than fully autonomous operation.
+These risks demonstrate that jurisdiction-aware AI governance systems still require continuous monitoring, timely regulatory updating, and human supervision rather than fully autonomous operation.
 
 # 3.7 Example Governance Outputs
 
-The proposed system generates different governance outcomes depending on the jurisdiction and risk profile of the lending decision.
+The system will generates different governance results depending on the jurisdictions and risk profile of the lending decision.
 
 Possible governance outputs include:
 
 - COMPLIANT  
-  The lending decision satisfies applicable jurisdiction-specific governance requirements.
+  The current lending decision satisfies  governance requirements under the corresponding jurisdiction.
 
 - HUMAN_REVIEW_REQUIRED  
   The system detects high-risk conditions such as insufficient explainability, demographic bias concerns, or incomplete compliance documentation.
