@@ -1,9 +1,11 @@
 # 3.1 Problem Statement
+
 More and more multinational financial institutions are utilizing AI system to automate credit scoring and loans decision-makings to improve operational efficiency with the development of AI technology. However, there are significant differences in AI government requirement across jurisdictions. In the United States, regulators focus more on fair lending and anti-discrimination obligations, while the European Union prefer to emphasis transparency, explainability, and human oversight under the EU AI Act.
 
 These regulatory differences create governance complexity for cross-border financial institutions such as Klarna. The traditional methods which highly rely on manual reviews or monitoring systems based on spreadsheet are hardly to fulfill all rapidly changing regulatory requirements across multiple jurisdictions efficiently.Therefore, this project proposes a jurisdiction-aware AI lending governance tool that automatically applies different compliance logic depending on the applicable regulatory environment.
 
 # 3.2 System Objectives
+
 The system is designed to support the governance and supervision management of cross-border AI lending through compliance logic equipped with the ability of jurisdiction-aware .
 The key goals of the system include：
 - Detect differences in regulatory requirements across different jurisdiction.
@@ -14,6 +16,7 @@ The key goals of the system include：
 - Improve the consistency and transparency of governance across jurisdictions.
 
 # 3.3 Jurisdiction Logic Matrix
+
 The table below shows some examples of how the same lending scenario may receive different governance responses under regulatory frameworks of the US and EU .
 
 | Governance Scenario | United States | European Union |
@@ -57,58 +60,62 @@ The governance workflow consists of several key components:
 
 The system will not fully automate final lending governance decisions. Although the AI model can complete  credit risk evaluation, fairness concerns detection, and governance rules application across differnet jurisdictios, there are parts of high-risk decisions still requiring human review.
 
-In the European Union, high-risk AI systems need to follow stricter governance obligations under the EU AI Act. Therefore, when the system detect issues such as insufficient explainability, potential demographic bias, or unusually high-risk classifications, manual reviews will be escalated automatically. Human reviewers are expected to assess whether the AI-generated outcome is reasonable, sufficiently explainable, and aligned with regulatory expectations.
+In the European Union, high-risk AI systems need to follow stricter governance obligations under the EU AI Act. Therefore, when the system detect issues such as insufficient explainability, potential demographic bias, or unusually high-risk classifications, manual reviews will be escalated automatically. The human reviewer needs to determine whether the AI-generated results are reasonable, sufficiently interpretable and meet the requirements set by regulations.
 
-In the United States, the system is primarily used to support fair lending monitoring and compliance documentation, although human intervention may still be necessary when potential discrimination risks or incomplete explanation records are detected.
+The US system will be used to monitor fair lending and generate reports on compliance, and some manual interventions may still be required in cases of higher risk of discrimination or missing explanation records.
 
-Tthe project assumes that AI governance should not depend entirely on automation. Combining human reviews with automatic governance can help to reduce excessive dependence on automated decision-making while improving accountability and regulatory transparency across jurisdictions.
+The project does not believe that AI governance will be carried out by automation. In conjunction with automated governance, some human intervention may be added to reduce dependence on autonomous operation and improve the reliability of regulation in all areas.
 
 # 3.6 Failure Modes and Governance Risks
 
-There may be several governance and operational risks when actually operating the "jurisdiction-aware" AI lending governance system.
+There will likely be a number of governance and operational risks in the actual operation of the "jurisdiction-aware" AI lending governance system.
 
-One possible issue is that financial regulations may continue to change over time. If governance rules are not updated quickly enough, the system could end up applying outdated jurisdiction logic, which may lead to inaccurate compliance assessments or insufficient governance controls.
+At various times in the future, the regulations of finance will change as well. If the governance rules are not updated in time, the system will apply outdated jurisdiction logic and thus fail to conduct an accurate assessment of compliance or establish effective governance controls.
 
-Another concern involves AI model drift. Changes in applicant behaviour, economic conditions, or data distributions may gradually may reduce the reliability of credit scoring outcomes. As a result, both prediction accuracy and fairness performance would be weaken over time.
+The other is AI model drift. Alterations in behaviour or the economy and other data distributions may cause the output of the model for credit scoring to change. Therefore, both the accuracy of prediction and fairness performance will decrease gradually over time.
 
-Explainability may also be challenged when more complex AI models are applied in lending decision-making. For example, the explanations may not be transparent enough for regulators, particularly under stricter EU regulatory requirements for high-risk AI systems.
+More complex AI models are being used to decide on loans, and they are not very transparent. For example, the explanations may not be sufficiently transparent to meet the stricter regulatory requirements for high-risk AI systems in the EU.
 
-The system can also detect possible mistakes made by jurisdictions. For example, if the system incorrectly identifies the applicable jurisdiction, it would apply the wrong governance rules, which may result in inconsistent 
-compliance treatment between the United States and the European Union.
+The system will also detect any errors in the jurisdictions. For example, if the system wrongly identifies the applicable jurisdiction, it will apply the wrong governance rules and thus result in an inconsistent application.
 
-There is also a risk that financial institutions become overly dependent on automated governance workflows. Human reviewers may gradually over-trust compliance outputs given by AI without further evaluating the underlying decision logic.
+Compliance Treatment Between the United States and the European Union.
 
-These risks demonstrate that jurisdiction-aware AI governance systems still require continuous monitoring, timely regulatory updating, and human supervision rather than fully autonomous operation.
+The financial institutions may also be using the automated governance workflow too much. Gradually, human reviewers will lose trust in the compliance results provided by AI and will be unable to verify the reasons for such decisions.
+
+These risks show that jurisdiction-aware AI governance systems still need to be continuously monitored and updated by regulations promptly, and they should not operate autonomously.
 
 # 3.7 Example Governance Outputs
 
-The system will generates different governance results depending on the jurisdictions and risk profile of the lending decision.
+Based on the area and risk of the loan, the system will output different governance results.
 
-Possible governance outputs include:
+Possible Governance Outcomes Include:
 
-- COMPLIANT  
-  This result indicates that the current lending decision satisfies  governance requirements under the corresponding jurisdiction.
+- COMPLIANT
 
-- HUMAN_REVIEW_REQUIRED  
-  This output may appear when the system detects high-risk conditions such as insufficient explainability, demographic bias concerns, or incomplete compliance documentation.
+Therefore, the present lending decision meets the governance requirements in that region.
+- HUMAN_REVIEW_NEEDED
 
-- HIGH_RISK_AI_WARNING  
-  The lending model may trigger stricter governance obligations under the EU AI Act due to limited transparency or elevated fairness risks.
+The above output may occur when the system has identified a high-risk situation, such as a lack of explainability, issues with demographic bias, or missing compliance documents.
 
-- FAIR_LENDING_ALERT  
-  This output suggests that the system has detected potential discrimination or fairness-related concerns under US fair lending requirements.
-  
-- REGULATORY_CONFIGURATION_WARNING  
-  Jurisdiction rules or governance parameters may be outdated or inconsistently applied.
+- HIGH_RISK_AI_WARNING
+
+The lending model may be subject to the enhanced governance obligations under the EU AI Act due to lower transparency or increased fairness risks.
+
+- FAIR_LENDING_ALERT
+
+The above output shows that the system has found a possible violation of fairness or discrimination according to US fair lending laws.
+
+- REGULATORY_CONFIGURATION_WARNING
+
+Jurisdiction Rules or Governance Parameters may be old or unevenly enforced.
 
   # 3.8 Limitations and Future Improvements
 
-The current prototype is designed to demonstrate the governance architecture and jurisdiction-aware compliance logic, rather than being a production-ready AI lending platform.
+The present prototype is designed to show the governance structure and jurisdiction-aware compliance logic, not to be a production-ready AI lending platform.
+Several technical and operating modules have been reduced in the scope of the current project. For example, the system does not yet support live financial data integration or real-time machine learning deployment. A relatively small Python prototype has been used to demonstrate the various governance regulations in different areas.
 
-Several technical and operational components are simplified within the current project scope. For example, the system does not yet support live financial data integration or real-time machine learning deployment. Instead, the lightweight Python prototype focuses mainly on illustrating how different governance rules may be applied across jurisdictions.
+Explainability and Fairness Assessment also have corresponding limitations. The current prototype has relatively simple governance logic and does not use more advanced explainable AI methods such as SHAP or LIME. In a real-world lending scenario, the above ways can offer more reasons for the AI's decision.
 
-There are also limitations related to explainability and fairness assessment. The current prototype uses relatively simplified governance logic and does not implement more advanced explainable AI methods such as SHAP or LIME. In a real-world lending environment, these methods could provide more detailed explanations for AI-generated decisions.
+The governance workflow has not covered other areas of regulatory differences in the United States and the European Union yet. Other places, such as the United Kingdom, Singapore and Canada, may be developed in the future.
 
-In addition, the governance workflow currently focuses only on regulatory divergence between the United States and the European Union. Other jurisdictions such as the United Kingdom, Singapore, or Canada may be incorporated in future development.
-
-The final limitation is that the project focuses primarily on governance orchestration and compliance logic rather than predictive model optimisation or commercial lending performance. As a result, the prototype should be viewed  as a governance demonstration rather than a complete lending solution.
+The last is that the scope of this project will only cover the orchestration of governance and compliance rules, excluding prediction model optimisation and commercial lending performance. Therefore, the prototype should be considered as a model for good governance rather than an all-encompassing loan system.
